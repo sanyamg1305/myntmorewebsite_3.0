@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Tools — Myntmore AI Growth Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tools-grid{ display: grid; grid-template-columns: 1fr; gap: 40px; }
+        .tool-card-lg{
+            background: var(--gray-2); border: 1px solid rgba(255,255,255,0.08); 
+            border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1.2fr 1fr;
+            transition: transform 0.3s var(--ease), border-color 0.3s;
+        }
+        .tool-card-lg:hover{ border-color: rgba(255,201,71,0.3); transform: translateY(-4px); }
+        .tool-side-info{ padding: 60px; border-right: 1px solid rgba(255,255,255,0.05); }
+        .tool-side-io{ padding: 60px; background: rgba(0,0,0,0.2); }
+        .io-label-tag{ font-size: 0.65rem; font-weight: 800; color: var(--gold); background: rgba(255,201,71,0.08); padding: 4px 8px; border-radius: 4px; text-transform: uppercase; margin-bottom: 24px; display: inline-block; }
+        @media(max-width: 960px){ 
+            .tool-card-lg{ grid-template-columns: 1fr; } 
+            .tool-side-info, .tool-side-io{ padding: 40px; border-right: none; }
+        }
+    </style>
+</head>
+<body style="opacity: 0;">
+
+<nav id="nav">
+    <div class="w">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">Mynt<span>more</span></a>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-end">
+                <a href="contact.html" class="btn btn-gold btn-sm">Book a call →</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section style="padding: 100px 0 60px;">
+    <div class="w">
+        <div class="rv">
+            <div class="pill pill-white" style="margin-bottom: 24px;">Beta Tools</div>
+            <h1>B2B Growth,<br><span class="gold">Automated.</span></h1>
+            <p style="max-width: 600px; margin-top: 24px; font-size: 1.1rem;">Free, high-utility tools for growth operators. No signup, no waitlists. Pure ROI.</p>
+        </div>
+    </div>
+</section>
+
+<section id="tools-library" style="padding: 60px 0 120px;">
+    <div class="w">
+        <div class="tools-grid">
+            
+            <!-- Tool 1 -->
+            <div class="tool-card-lg rv">
+                <div class="tool-side-info">
+                    <span class="io-label-tag">Free · Most Popular</span>
+                    <h2>LinkedIn Profile<br>Optimizer</h2>
+                    <p style="margin-top: 24px; font-size: 0.95rem;">Audit and rewrite your profile to convert cold visitors into warm replies. Used by 2,000+ founders.</p>
+                    <div style="margin-top: 40px;">
+                        <a href="contact.html" class="btn btn-gold">Launch Tool →</a>
+                    </div>
+                </div>
+                <div class="tool-side-io">
+                    <div class="io-block">
+                        <div class="io-item">
+                            <span class="io-k">Input</span>
+                            <span class="io-v">Current headline + target audience objective</span>
+                        </div>
+                        <div style="height: 1px; background: rgba(255,255,255,0.05); margin: 20px 0;"></div>
+                        <div class="io-item">
+                            <span class="io-k">Output</span>
+                            <span class="io-v"><strong>New Headline</strong> · Optimized About Section · Search Keyword List</span>
+                        </div>
+                        <div style="height: 1px; background: rgba(255,255,255,0.05); margin: 20px 0;"></div>
+                        <div class="io-item">
+                            <span class="io-k">Best For</span>
+                            <span class="io-v">Founders launching warm outbound campaigns.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="tool-card-lg rv rv-d1">
+                <div class="tool-side-info">
+                    <span class="io-label-tag">Free · AI Agent</span>
+                    <h2>DM Angle<br>Generator</h2>
+                    <p style="margin-top: 24px; font-size: 0.95rem;">Stop sending generic "I saw your profile" messages. Give the AI a context, get 5 psychological openers.</p>
+                    <div style="margin-top: 40px;">
+                        <a href="contact.html" class="btn btn-gold">Generate Angles →</a>
+                    </div>
+                </div>
+                <div class="tool-side-io">
+                    <div class="io-block">
+                        <div class="io-item">
+                            <span class="io-k">Input</span>
+                            <span class="io-v">Prospect's recent post URL or About section</span>
+                        </div>
+                        <div style="height: 1px; background: rgba(255,255,255,0.05); margin: 20px 0;"></div>
+                        <div class="io-item">
+                            <span class="io-k">Output</span>
+                            <span class="io-v"><strong>5 Unique Intro Angles</strong> · Custom CTA suggestion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="tool-card-lg rv rv-d2">
+                <div class="tool-side-info">
+                    <span class="io-label-tag">Free · Content Strategy</span>
+                    <h2>Posting Rhythm<br>Builder</h2>
+                    <p style="margin-top: 24px; font-size: 0.95rem;">LinkedIn rewards consistency. Build your 30-day content calendar based on your niche, audience, and goals.</p>
+                    <div style="margin-top: 40px;">
+                        <a href="contact.html" class="btn btn-gold">Build Calendar →</a>
+                    </div>
+                </div>
+                <div class="tool-side-io">
+                    <div class="io-block">
+                        <div class="io-item">
+                            <span class="io-k">Input</span>
+                            <span class="io-v">Your role + industry + 3 content themes</span>
+                        </div>
+                        <div style="height: 1px; background: rgba(255,255,255,0.05); margin: 20px 0;"></div>
+                        <div class="io-item">
+                            <span class="io-k">Output</span>
+                            <span class="io-v"><strong>30-day calendar</strong> · Post formats · Topic angles · Optimal timing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- UPSELL SECTION -->
+<section id="upsell" style="background: var(--gray-1); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="w">
+        <div class="rv" style="text-align: center; max-width: 640px; margin: 0 auto;">
+            <div class="pill pill-gold" style="margin-bottom: 24px;">Want more?</div>
+            <h2>Let us run the entire system for you.</h2>
+            <p style="margin-top: 24px; font-size: 1.1rem; color: var(--gray-7);">Tools are just the start. We build the full architecture — intelligence, lead gen, and outreach — so you focus on closing deals.</p>
+            <div style="margin-top: 44px; display: flex; gap: 16px; justify-content: center;">
+                <a href="contact.html" class="btn btn-gold">Book a Strategy Call →</a>
+                <a href="services.html" class="btn btn-ghost">Explore Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="w">
+        <div class="footer-top">
+            <div>
+                <a href="index.html" class="footer-logo-mark">Mynt<span>more</span></a>
+                <div class="footer-desc">B2B growth systems for founders who want predictable pipeline.</div>
+            </div>
+            <div>
+                <div class="f-head">Pages</div>
+                <ul class="f-links">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="f-head">Contact</div>
+                <ul class="f-links">
+                    <li><a href="contact.html">Book a Call</a></li>
+                    <li><a href="mailto:hello@myntmore.com">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="f-copy">© 2025 Myntmore. Built in Mumbai.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
