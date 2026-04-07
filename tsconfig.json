@@ -6,9 +6,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "outDir": ".",
-    "lib": ["DOM", "ESNext"]
+    "moduleResolution": "bundler",
+    "lib": ["DOM", "ESNext"],
+    "ignoreDeprecations": "6.0"
   },
   "include": ["main.ts"]
 }
