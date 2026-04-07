@@ -1,4 +1,4 @@
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+﻿*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:16px}
 
 :root{
@@ -27,22 +27,22 @@ body{
   overflow-x:hidden;
 }
 
-/* ── SCROLLBAR ── */
+/* â”€â”€ SCROLLBAR â”€â”€ */
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:var(--black)}
 ::-webkit-scrollbar-thumb{background:var(--gray-4);border-radius:2px}
 
-/* ── TYPE ── */
+/* â”€â”€ TYPE â”€â”€ */
 h1{font-size:clamp(3rem,6.5vw,6rem);font-weight:800;line-height:1.0;letter-spacing:-0.03em}
 h2{font-size:clamp(2rem,4vw,3.8rem);font-weight:800;line-height:1.05;letter-spacing:-0.03em}
 h3{font-size:clamp(1.1rem,2vw,1.4rem);font-weight:700;letter-spacing:-0.02em}
 p{color:var(--gray-7);line-height:1.7}
 
-/* ── LAYOUT ── */
+/* â”€â”€ LAYOUT â”€â”€ */
 .w{max-width:1240px;margin:0 auto;padding:0 40px}
 section{padding:120px 0;position:relative}
 
-/* ── BUTTONS ── */
+/* â”€â”€ BUTTONS â”€â”€ */
 .btn{
   display:inline-flex;align-items:center;gap:8px;
   font-family:var(--f);font-weight:600;font-size:0.88rem;
@@ -58,7 +58,7 @@ section{padding:120px 0;position:relative}
 .btn-ghost:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2)}
 .btn-sm{padding:9px 18px;font-size:0.8rem}
 
-/* ── PILL BADGE ── */
+/* â”€â”€ PILL BADGE â”€â”€ */
 .pill{
   display:inline-flex;align-items:center;gap:7px;
   font-size:0.75rem;font-weight:600;letter-spacing:0.04em;
@@ -70,7 +70,7 @@ section{padding:120px 0;position:relative}
 .pill-dot-gold{background:var(--gold)}
 .pill-dot-green{background:#4ade80}
 
-/* ── NAV ── */
+/* â”€â”€ NAV â”€â”€ */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:500;
   padding:0;
@@ -86,10 +86,12 @@ nav.scrolled{
   height:68px;
 }
 .logo{
-  font-weight:800;font-size:1.35rem;letter-spacing:-0.03em;
-  color:var(--white);text-decoration:none;
+  display:flex;align-items:center;
+  text-decoration:none;
 }
-.logo span{color:var(--gold)}
+.logo img{height:52px;width:auto}
+.logo span{display:none}
+.footer-logo-mark img{height:64px;width:auto;margin-bottom:14px}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{
   font-size:0.875rem;font-weight:500;color:var(--gray-7);
@@ -98,7 +100,7 @@ nav.scrolled{
 .nav-links a:hover, .nav-links a.active{color:var(--white)}
 .nav-end{display:flex;gap:10px;align-items:center}
 
-/* ── HERO ── */
+/* â”€â”€ HERO â”€â”€ */
 #hero{
   min-height:100vh;
   display:flex;flex-direction:column;justify-content:center;
@@ -226,7 +228,7 @@ h1.hero-h{
 .lead-role{font-size:0.65rem;color:var(--gray-6)}
 .lead-score{font-size:0.68rem;font-weight:700;color:var(--gold)}
 
-/* ── LOGOS ── */
+/* â”€â”€ LOGOS â”€â”€ */
 #logos{padding:48px 0;border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05)}
 .logos-label{text-align:center;font-size:0.75rem;font-weight:500;color:var(--gray-6);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:32px}
 .logos-row{display:flex;justify-content:center;align-items:center;gap:48px;flex-wrap:wrap}
@@ -236,7 +238,7 @@ h1.hero-h{
 }
 .logo-item:hover{color:var(--gray-7)}
 
-/* ── PROBLEM ── */
+/* â”€â”€ PROBLEM â”€â”€ */
 .problem-top{
   display:grid;grid-template-columns:1fr 1fr;
   gap:80px;align-items:center;margin-bottom:80px;
@@ -261,7 +263,7 @@ h1.hero-h{
 .prob-card h3{font-size:1rem;margin-bottom:8px}
 .prob-card p{font-size:0.875rem}
 
-/* ── SERVICES ── */
+/* â”€â”€ SERVICES â”€â”€ */
 .services-top{text-align:center;max-width:640px;margin:0 auto 72px}
 .services-top h2{margin-bottom:16px}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden}
@@ -297,7 +299,7 @@ h1.hero-h{
 }
 .svc-cta-card h3{color:var(--gold)}
 
-/* ── PROCESS ── */
+/* â”€â”€ PROCESS â”€â”€ */
 .process-top{
   display:flex;justify-content:space-between;align-items:flex-end;
   margin-bottom:80px;
@@ -329,7 +331,7 @@ h1.hero-h{
   color:var(--gold);
 }
 
-/* ── NUMBERS ── */
+/* â”€â”€ NUMBERS â”€â”€ */
 #numbers{
   padding:0;
   background:var(--gold);
@@ -349,7 +351,7 @@ h1.hero-h{
 }
 .nc-label{font-size:0.82rem;font-weight:600;color:rgba(0,0,0,0.55)}
 
-/* ── TOOLS ── */
+/* â”€â”€ TOOLS â”€â”€ */
 .tools-top{text-align:center;max-width:600px;margin:0 auto 72px}
 .tools-top h2{margin-bottom:16px}
 .tools-list{display:flex;flex-direction:column;gap:2px}
@@ -388,7 +390,7 @@ h1.hero-h{
   padding:4px 10px;border-radius:4px;
 }
 
-/* ── PROOF ── */
+/* â”€â”€ PROOF â”€â”€ */
 .proof-top{text-align:center;max-width:600px;margin:0 auto 72px}
 .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden}
 .case-card{
@@ -410,7 +412,7 @@ h1.hero-h{
 .case-card.dark{background:linear-gradient(135deg,rgba(255,201,71,0.06),rgba(255,201,71,0.01));border:1px solid rgba(255,201,71,0.1)}
 .case-card.dark h3{color:var(--gold)}
 
-/* ── TESTIMONIALS ── */
+/* â”€â”€ TESTIMONIALS â”€â”€ */
 .testi-top{text-align:center;max-width:600px;margin:0 auto 72px}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden}
 .testi-card{
@@ -429,7 +431,7 @@ h1.hero-h{
 .testi-name{font-size:0.875rem;font-weight:700;margin-top:0}
 .testi-role{font-size:0.75rem;color:var(--gray-6)}
 
-/* ── ABOUT ── */
+/* â”€â”€ ABOUT â”€â”€ */
 .about-layout{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
 .about-left h2{margin-bottom:24px}
 .about-left p{margin-bottom:18px;font-size:1rem}
@@ -449,7 +451,7 @@ h1.hero-h{
 .as-val{font-size:2.4rem;font-weight:800;color:var(--gold);letter-spacing:-0.04em;line-height:1}
 .as-desc{font-size:0.875rem;color:var(--gray-7);line-height:1.5}
 
-/* ── RESOURCES ── */
+/* â”€â”€ RESOURCES â”€â”€ */
 .res-top{text-align:center;max-width:600px;margin:0 auto 72px}
 .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden}
 .res-card{
@@ -470,7 +472,7 @@ h1.hero-h{
 }
 .res-link:hover{gap:14px;color:var(--gold)}
 
-/* ── CTA ── */
+/* â”€â”€ CTA â”€â”€ */
 #cta{
   padding:160px 0;
   text-align:center;
@@ -487,7 +489,7 @@ h1.hero-h{
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .cta-note{margin-top:24px;font-size:0.75rem;color:var(--gray-6)}
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 footer{
   background:var(--gray-1);
   border-top:1px solid rgba(255,255,255,0.06);
@@ -510,7 +512,7 @@ footer{
 .f-social a{font-size:0.75rem;color:var(--gray-6);font-weight:600;letter-spacing:0.04em;transition:color 0.2s}
 .f-social a:hover{color:var(--gold)}
 
-/* ── PAGE TRANSITIONS & REVEALS ── */
+/* â”€â”€ PAGE TRANSITIONS & REVEALS â”€â”€ */
 .rv{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease)}
 .rv.show{opacity:1;transform:none}
 .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
@@ -518,7 +520,7 @@ footer{
 /* Initial page fade in */
 body{opacity:0;transition:opacity 0.8s ease-in;opacity:1}
 
-/* ── RESPONSIVE ── */
+/* â”€â”€ RESPONSIVE â”€â”€ */
 @media(max-width:960px){
   h1{font-size:clamp(2.2rem,9vw,3.8rem)}
   h2{font-size:clamp(1.8rem,7vw,3rem)}
