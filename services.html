@@ -1,285 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - AI Growth Systems</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .svc-subnav{
-            position: sticky; top: 68px; background: rgba(0,0,0,0.8); backdrop-filter: blur(12px);
-            z-index: 400; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 12px 0;
-        }
-        .svc-subnav .w{ display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; }
-        .svc-subnav a{ font-size: 0.75rem; font-weight: 600; color: var(--gray-6); text-decoration: none; white-space: nowrap; transition: color 0.2s; }
-        .svc-subnav a:hover{ color: var(--gold); }
-        .svc-detail-section{ padding: 100px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .svc-detail-grid{ display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: center; }
-        .svc-visual{ 
-            background: var(--gray-2); border: 1px solid rgba(255,255,255,0.08); 
-            border-radius: 12px; height: 320px; display: flex; align-items: center; justify-content: center;
-            position: relative; overflow: hidden;
-        }
-        .svc-visual::after{
-            content: 'Mock UI Output'; position: absolute; bottom: 20px; left: 20px; 
-            font-size: 0.65rem; color: var(--gray-5); font-weight: 700; text-transform: uppercase;
-        }
-        .deliverables-list{ list-style: none; margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .deliverables-list li{ font-size: 0.85rem; color: var(--gray-7); display: flex; align-items: center; gap: 8px; }
-        .deliverables-list li::before{ content: '→'; color: var(--gold); font-weight: 800; }
-        @media(max-width: 960px){ .svc-detail-grid{ grid-template-columns: 1fr; gap: 40px; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myntmore — AI-Powered B2B Growth Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav id="nav">
-    <div class="w">
-        <div class="nav-inner">
-            <a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a>
-            <ul class="nav-links">
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            <div class="nav-end">
-                <a href="contact.html" class="btn btn-gold btn-sm">Book a call →</a>
-            </div>
-        </div>
+  <div class="w">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" style="display:flex;align-items:center;"><img src="logo.png" alt="Myntmore" style="height:44px;"></a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-end">
+        <a href="contact.html" class="btn btn-gold btn-sm">Book a call →</a>
+      </div>
     </div>
+  </div>
 </nav>
 
-<div class="svc-subnav">
-    <div class="w">
-        <a href="#intelligence">Sales Intelligence</a>
-        <a href="#leadgen">AI Lead Gen</a>
-        <a href="#linkedin">LinkedIn Outreach</a>
-        <a href="#branding">Personal Branding</a>
-        <a href="#email">Cold Email</a>
-        <a href="#gtm">Full GTM</a>
-    </div>
+<div class="subnav" style="position:sticky; top:68px; background:var(--gray-1); z-index:400; padding:15px 0; border-bottom:1px solid rgba(255,255,255,0.05);">
+  <div class="w" style="display:flex; gap:16px; overflow-x:auto;">
+    <a href="#intel" class="btn btn-ghost btn-sm" style="background:var(--gray-3);border:none;">Sales Intelligence</a>
+    <a href="#ai-lead" class="btn btn-ghost btn-sm" style="background:var(--gray-3);border:none;">AI Lead Gen</a>
+    <a href="#linkedin" class="btn btn-ghost btn-sm" style="background:var(--gray-3);border:none;">LinkedIn Outreach</a>
+    <a href="#brand" class="btn btn-ghost btn-sm" style="background:var(--gray-3);border:none;">Personal Branding</a>
+    <a href="#cold-email" class="btn btn-ghost btn-sm" style="background:var(--gray-3);border:none;">Cold Email Infra</a>
+  </div>
 </div>
 
-<section id="services-hero" style="padding: 100px 0 60px;">
-    <div class="w">
+<section id="services-hero" style="padding:100px 0 40px; background:var(--black);">
+  <div class="w rv">
+    <div class="pill pill-gold" style="margin-bottom:20px"><span class="pill-dot pill-dot-gold"></span>Our Methodology</div>
+    <h1 style="font-size:3.5rem; max-width:800px; margin-bottom:20px;">Five systems.<br><span class="gold">One growth engine.</span></h1>
+    <p style="font-size:1.15rem; max-width:600px;">Every service is productized, scoped, and runs on proven infrastructure — not promises. We build the architecture, you close the deals.</p>
+  </div>
+</section>
+
+<!-- SERVICE 1 -->
+<section id="intel" style="padding:100px 0; border-bottom:1px solid rgba(255,255,255,0.05); background:var(--gray-1);">
+  <div class="w">
+     <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
         <div class="rv">
-            <div class="pill pill-gold" style="margin-bottom: 24px;">Systems for scale</div>
-            <h1>B2B Growth,<br><span class="gold">Productized.</span></h1>
-            <p style="max-width: 600px; margin-top: 24px; font-size: 1.1rem;">We build, deploy, and manage the five core systems required to dominate your market. No headhount, no overhead, just results.</p>
+           <div class="pill pill-white" style="margin-bottom:16px"><span class="pill-dot" style="background:var(--gray-6)"></span>Service 01</div>
+           <h2 style="margin-bottom:20px;">Sales Intelligence & ICP Mapping</h2>
+           <p style="margin-bottom:24px; font-size:1rem;"><strong>What it is:</strong> Build your ICP from signal data — job changes, funding rounds, intent signals. Know exactly who's ready to buy right now.</p>
+           <div style="margin-bottom:24px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">How It Works</h3>
+             <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; color:var(--gray-7); font-size:0.9rem;">
+                <li><span style="color:var(--gold); margin-right:8px;">✔</span> Continuous data scraping across 40+ intent sources.</li>
+                <li><span style="color:var(--gold); margin-right:8px;">✔</span> Automated lead scoring based on buying signals.</li>
+                <li><span style="color:var(--gold); margin-right:8px;">✔</span> Trigger-based list building updated daily.</li>
+             </ul>
+           </div>
+           <div style="margin-bottom:32px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">Deliverables</h3>
+             <div class="svc-tags">
+                <span class="svc-tag-item">Trigger lists</span>
+                <span class="svc-tag-item">Account scoring</span>
+                <span class="svc-tag-item">Competitive intel</span>
+             </div>
+           </div>
         </div>
-    </div>
+        <div class="preview-card rv rv-d1" style="box-shadow:0 40px 80px rgba(0,0,0,0.6);">
+           <div class="preview-card-head">
+             <span class="pc-title">ICP Data Stream</span>
+             <span class="pc-badge">Live Signals</span>
+           </div>
+           <div class="preview-lead-list">
+              <div class="lead-item"><div class="lead-avatar">Tech</div><div class="lead-info"><div class="lead-name">Acme Corp</div><div class="lead-role">Signal: Raised Series B (48hrs ago)</div></div><div class="lead-score" style="color:#4ade80;">High Intent</div></div>
+              <div class="lead-item"><div class="lead-avatar" style="background:#4A90E2;">Logi</div><div class="lead-info"><div class="lead-name">FlexPort</div><div class="lead-role">Signal: Hiring 10+ SDRs</div></div><div class="lead-score" style="color:#4ade80;">High Intent</div></div>
+           </div>
+        </div>
+     </div>
+  </div>
 </section>
 
-<!-- Sales Intelligence -->
-<section id="intelligence" class="svc-detail-section">
-    <div class="w">
-        <div class="svc-detail-grid">
-            <div class="rv">
-                <div class="svc-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#FFC947" stroke-width="1.5"/><line x1="12.5" y1="12.5" x2="17" y2="17" stroke="#FFC947" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <h2>Sales Intelligence &<br>ICP Mapping</h2>
-                <p style="margin-top: 20px;">We map your total addressable market using dynamic signals. We don't just find companies; we find companies in the <strong>buying window</strong>.</p>
-                <ul class="deliverables-list">
-                    <li>Dynamic ICP Map</li>
-                    <li>Signal Audit</li>
-                    <li>TAM Mapping</li>
-                    <li>Buying Triggers</li>
-                </ul>
-                <div style="margin-top: 40px; display: flex; gap: 16px;">
-                    <div class="nc-val" style="font-size: 2rem;">22%</div>
-                    <p style="font-size: 0.8rem;">Avg increase in meeting quality<br>from signal-led lists.</p>
-                </div>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                <!-- Visual Mockup -->
-                <div style="width: 80%; background: var(--gray-3); padding: 16px; border-radius: 8px;">
-                    <div style="height: 10px; width: 40%; background: var(--gray-5); margin-bottom: 12px;"></div>
-                    <div style="height: 60px; background: rgba(255,201,71,0.05); border: 1px solid var(--gold-glow); border-radius: 4px;"></div>
-                </div>
-            </div>
+<!-- SERVICE 2 -->
+<section id="ai-lead" style="padding:100px 0; border-bottom:1px solid rgba(255,255,255,0.05); background:var(--black);">
+  <div class="w">
+     <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+        <div class="preview-card rv rv-d1" style="box-shadow:0 40px 80px rgba(0,0,0,0.6);">
+           <div class="preview-card-head">
+             <span class="pc-title">AI Pipeline Agent</span>
+             <span class="pc-badge">Processing</span>
+           </div>
+           <div style="padding:20px; background:var(--gray-2); border-radius:8px; font-family:monospace; font-size:0.75rem; color:var(--gray-6);">
+              > Scraping public presence for personalizations...<br>
+              > Generating 420 unique opening angles...<br>
+              <span style="color:var(--gold);">> Exporting to CRM & Sequence.</span>
+           </div>
         </div>
-    </div>
+        <div class="rv">
+           <div class="pill pill-white" style="margin-bottom:16px"><span class="pill-dot" style="background:var(--gray-6)"></span>Service 02</div>
+           <h2 style="margin-bottom:20px;">AI-Led Lead Generation</h2>
+           <p style="margin-bottom:24px; font-size:1rem;"><strong>What it is:</strong> Custom AI agents that research, qualify, and prioritise leads at scale — cutting human research time by 80%.</p>
+           <div style="margin-bottom:32px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">Deliverables</h3>
+             <div class="svc-tags">
+                <span class="svc-tag-item">Auto research</span>
+                <span class="svc-tag-item">Lead scoring</span>
+                <span class="svc-tag-item">CRM export</span>
+             </div>
+           </div>
+        </div>
+     </div>
+  </div>
 </section>
 
-<!-- AI Lead Gen -->
-<section id="leadgen" class="svc-detail-section" style="background: var(--gray-1);">
-    <div class="w">
-        <div class="svc-detail-grid" style="direction: rtl;">
-            <div class="rv" style="direction: ltr;">
-                <div class="svc-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.5" stroke="#FFC947" stroke-width="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5" stroke="#FFC947" stroke-width="1.5"/></svg>
-                </div>
-                <h2>AI-Led Lead<br>Generation</h2>
-                <p style="margin-top: 20px;">AI agents that research prospects like a top-tier SDR but at 100x the speed. We personalize every touchpoint using real-time data.</p>
-                <ul class="deliverables-list">
-                    <li>AI Personalization</li>
-                    <li>Auto-Enrichment</li>
-                    <li>Lead Scoring</li>
-                    <li>CRM Integration</li>
-                </ul>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                <div style="width: 70%; display: flex; flex-direction: column; gap: 8px;">
-                    <div style="height: 30px; background: rgba(255,255,255,0.05); border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);"></div>
-                    <div style="height: 30px; background: rgba(255,255,255,0.05); border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);"></div>
-                    <div style="height: 30px; background: var(--gold-glow); border-radius: 4px; border: 1px solid var(--gold);"></div>
-                </div>
-            </div>
+<!-- SERVICE 3 -->
+<section id="linkedin" style="padding:100px 0; border-bottom:1px solid rgba(255,255,255,0.05); background:var(--gray-1);">
+  <div class="w">
+     <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+        <div class="rv">
+           <div class="pill pill-white" style="margin-bottom:16px"><span class="pill-dot" style="background:var(--gray-6)"></span>Service 03</div>
+           <h2 style="margin-bottom:20px;">LinkedIn Outreach & Automation</h2>
+           <p style="margin-bottom:24px; font-size:1rem;"><strong>What it is:</strong> Multi-touch sequences running silently that mimic human behavior perfectly to generate replies.</p>
+           <div style="margin-bottom:32px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">Deliverables</h3>
+             <div class="svc-tags">
+                <span class="svc-tag-item">Sequences</span>
+                <span class="svc-tag-item">DM flows</span>
+                <span class="svc-tag-item">Reply optimisation</span>
+             </div>
+           </div>
         </div>
-    </div>
+        <div class="preview-card rv rv-d1" style="box-shadow:0 40px 80px rgba(0,0,0,0.6);">
+           <div class="preview-card-head">
+             <span class="pc-title">LinkedIn Sequence</span>
+             <span class="pc-badge">Metrics</span>
+           </div>
+           <div class="preview-stat-row">
+             <div class="ps-item"><div class="ps-num">48%</div><div class="ps-label">Accept Rate</div></div>
+             <div class="ps-item"><div class="ps-num">21%</div><div class="ps-label">Reply Rate</div></div>
+             <div class="ps-item"><div class="ps-num">8</div><div class="ps-label">Meetings</div></div>
+           </div>
+        </div>
+     </div>
+  </div>
 </section>
 
-<!-- LinkedIn -->
-<section id="linkedin" class="svc-detail-section">
-    <div class="w">
-        <div class="svc-detail-grid">
-            <div class="rv">
-                <div class="svc-icon">
-                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 10c0 3.866-3.134 7-7 7a6.978 6.978 0 01-4.33-1.496L3 17l1.496-2.67A6.978 6.978 0 013 10c0-3.866 3.134-7 7-7s7 3.134 7 7z" stroke="#FFC947" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                </div>
-                <h2>LinkedIn Outreach &<br>Automation</h2>
-                <p style="margin-top: 20px;">Multi-touch LinkedIn sequences that bypass common automation filters. Connection requests, DMs, and follow-ups running 24/7.</p>
-                <ul class="deliverables-list">
-                    <li>Smart Sequences</li>
-                    <li>DM Optimization</li>
-                    <li>Safety-First Logic</li>
-                    <li>Conversion Analysis</li>
-                </ul>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                 <div style="width: 60%; height: 180px; background: var(--gray-3); border-radius: 12px; padding: 20px; border: 1px solid rgba(255,255,255,0.1);">
-                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 20px;">
-                        <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: #000; font-weight: 800;">YO</div>
-                        <div style="height: 8px; width: 60px; background: var(--gray-5);"></div>
-                    </div>
-                    <div style="height: 60px; width: 100%; border-left: 2px solid var(--gold); background: rgba(255,201,71,0.03); padding-left: 10px;">
-                        <div style="height: 6px; width: 80%; background: var(--gray-6); margin-top: 10px;"></div>
-                        <div style="height: 6px; width: 40%; background: var(--gray-6); margin-top: 8px;"></div>
-                    </div>
-                 </div>
-            </div>
+<!-- SERVICE 4 -->
+<section id="brand" style="padding:100px 0; border-bottom:1px solid rgba(255,255,255,0.05); background:var(--black);">
+  <div class="w">
+     <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+        <div class="preview-card rv rv-d1" style="box-shadow:0 40px 80px rgba(0,0,0,0.6);">
+           <div class="preview-card-head">
+             <span class="pc-title">Weekly Content Rhythm</span>
+             <span class="pc-badge" style="background:rgba(255,201,71,0.1);color:var(--gold);">Approved</span>
+           </div>
+           <div style="display:flex; flex-direction:column; gap:10px;">
+              <div style="padding:12px; background:var(--gray-2); border-radius:6px; border-left:3px solid var(--gold);"><span style="font-size:0.7rem; color:var(--gray-6);">TUESDAY 8AM</span><br><span style="font-size:0.85rem;">"The 3 mistakes Series A founders make..."</span></div>
+              <div style="padding:12px; background:var(--gray-2); border-radius:6px; border-left:3px solid var(--gold);"><span style="font-size:0.7rem; color:var(--gray-6);">THURSDAY 10AM</span><br><span style="font-size:0.85rem;">[Tear Down] How Acme built their outbound</span></div>
+           </div>
         </div>
-    </div>
+        <div class="rv">
+           <div class="pill pill-white" style="margin-bottom:16px"><span class="pill-dot" style="background:var(--gray-6)"></span>Service 04</div>
+           <h2 style="margin-bottom:20px;">Personal Branding</h2>
+           <p style="margin-bottom:24px; font-size:1rem;"><strong>What it is:</strong> Ghostwritten content that positions you as the authority — solving the trust barrier for outbound.</p>
+           <div style="margin-bottom:32px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">Deliverables</h3>
+             <div class="svc-tags">
+                <span class="svc-tag-item">4-8 posts/mo</span>
+                <span class="svc-tag-item">Profile optim.</span>
+                <span class="svc-tag-item">Thought leadership</span>
+             </div>
+           </div>
+        </div>
+     </div>
+  </div>
 </section>
 
-<!-- Personal Branding -->
-<section id="branding" class="svc-detail-section" style="background: var(--gray-1);">
-    <div class="w">
-        <div class="svc-detail-grid" style="direction: rtl;">
-            <div class="rv" style="direction: ltr;">
-                <div class="svc-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 14l3-3 2.5 2.5L14 8" stroke="#FFC947" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="5" r="2.5" stroke="#FFC947" stroke-width="1.5"/></svg>
-                </div>
-                <h2>LinkedIn Personal Branding</h2>
-                <p style="margin-top: 20px;">Ghostwritten content that positions you as the authority in your space. We handle the research, writing, and scheduling while you focus on closing.</p>
-                <ul class="deliverables-list">
-                    <li>4-8 Posts/Mo</li>
-                    <li>Profile Optimization</li>
-                    <li>Thought Leadership</li>
-                    <li>Engagement Strategy</li>
-                </ul>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                <div style="width: 80%; padding: 20px; background: var(--gray-3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-                    <div style="height: 12px; width: 30%; background: var(--gold); margin-bottom: 20px;"></div>
-                    <div style="height: 8px; width: 90%; background: var(--gray-5); margin-bottom: 8px;"></div>
-                    <div style="height: 8px; width: 85%; background: var(--gray-5); margin-bottom: 8px;"></div>
-                    <div style="height: 8px; width: 40%; background: var(--gray-5);"></div>
-                </div>
-            </div>
+<!-- SERVICE 5 -->
+<section id="cold-email" style="padding:100px 0; border-bottom:1px solid rgba(255,255,255,0.05); background:var(--gray-1);">
+  <div class="w">
+     <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+        <div class="rv">
+           <div class="pill pill-white" style="margin-bottom:16px"><span class="pill-dot" style="background:var(--gray-6)"></span>Service 05</div>
+           <h2 style="margin-bottom:20px;">Cold Email Infra</h2>
+           <p style="margin-bottom:24px; font-size:1rem;"><strong>What it is:</strong> The full technical stack: domain warmup, deliverability, AI-personalised sequences, A/B testing.</p>
+           <div style="margin-bottom:32px;">
+             <h3 style="font-size:1rem; margin-bottom:10px;">Deliverables</h3>
+             <div class="svc-tags">
+                <span class="svc-tag-item">Domain warmup</span>
+                <span class="svc-tag-item">Deliverability</span>
+                <span class="svc-tag-item">A/B testing</span>
+             </div>
+           </div>
         </div>
-    </div>
+        <div class="preview-card rv rv-d1" style="box-shadow:0 40px 80px rgba(0,0,0,0.6);">
+           <div class="preview-card-head">
+             <span class="pc-title">Deliverability Health</span>
+             <span class="pc-badge">100% Healthy</span>
+           </div>
+           <div class="preview-stat-row">
+             <div class="ps-item"><div class="ps-num">98.5%</div><div class="ps-label">Inbox Rate</div></div>
+             <div class="ps-item"><div class="ps-num">0.1%</div><div class="ps-label">Spam Rate</div></div>
+             <div class="ps-item"><div class="ps-num">45%</div><div class="ps-label">Open Rate</div></div>
+           </div>
+        </div>
+     </div>
+  </div>
 </section>
 
-<!-- Cold Email -->
-<section id="email" class="svc-detail-section">
-    <div class="w">
-        <div class="svc-detail-grid">
-            <div class="rv">
-                <div class="svc-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="11" rx="2" stroke="#FFC947" stroke-width="1.5"/><path d="M3 8l7 5 7-5" stroke="#FFC947" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                </div>
-                <h2>Cold Email Infrastructure</h2>
-                <p style="margin-top: 20px;">The full stack: domain warmup, deliverability management, and AI-personalized sequences that bypass spam filters and land in the inbox.</p>
-                <ul class="deliverables-list">
-                    <li>Domain Warmup</li>
-                    <li>Deliverability Audit</li>
-                    <li>A/B Testing</li>
-                    <li>Reply Management</li>
-                </ul>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                <div style="width: 70%; background: var(--gray-2); border-radius: 12px; padding: 24px; border: 1px solid rgba(255,255,255,0.08);">
-                    <div style="display: flex; gap: 8px; margin-bottom: 16px;">
-                        <div style="width: 40px; height: 12px; background: var(--gold-glow); border-radius: 100px;"></div>
-                        <div style="width: 60px; height: 12px; background: rgba(255,255,255,0.05); border-radius: 100px;"></div>
-                    </div>
-                    <div style="height: 1px; background: rgba(255,255,255,0.05); margin-bottom: 16px;"></div>
-                    <div style="height: 60px; background: rgba(255,255,255,0.02); border-radius: 4px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- BOTTOM CTA -->
+<section style="padding:120px 0; background:var(--black); text-align:center;">
+  <div class="w rv">
+    <h2 style="margin-bottom:20px;">Ready to run the engine?</h2>
+    <a href="contact.html" class="btn btn-gold" style="padding:15px 36px;">Book a Strategy Call →</a>
+  </div>
 </section>
 
-<!-- Full GTM -->
-<section id="gtm" class="svc-detail-section" style="background: var(--gray-1);">
-    <div class="w">
-        <div class="svc-detail-grid" style="direction: rtl;">
-            <div class="rv" style="direction: ltr;">
-                <div class="svc-icon" style="background: var(--gold-glow); border-color: var(--gold);">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v14M3 10h14" stroke="#FFC947" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <h2>Full GTM Execution</h2>
-                <p style="margin-top: 20px;">All systems running together under one team. One point of accountability. We build, run, and optimize your entire go-to-market motion.</p>
-                <a href="contact.html" class="btn btn-gold" style="margin-top: 32px;">Get a custom scope →</a>
-            </div>
-            <div class="svc-visual rv rv-d1">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 80%;">
-                    <div style="height: 80px; background: var(--gray-3); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;"></div>
-                    <div style="height: 80px; background: var(--gold-glow2); border: 1px solid var(--gold-glow); border-radius: 4px;"></div>
-                    <div style="height: 80px; background: var(--gray-3); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;"></div>
-                    <div style="height: 80px; background: var(--gray-3); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-    <div class="w">
-        <div class="footer-top">
-            <div>
-                <a href="index.html" class="footer-logo-mark"><img src="logo.png" alt="Logo"></a>
-                <div class="footer-desc">B2B growth systems for founders who want predictable pipeline.</div>
-            </div>
-            <div>
-                <div class="f-head">Pages</div>
-                <ul class="f-links">
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="case-studies.html">Case Studies</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="f-head">Contact</div>
-                <ul class="f-links">
-                    <li><a href="contact.html">Book a Call</a></li>
-                    <li><a href="mailto:hello@myntmore.com">Email Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span class="f-copy">© 2025. Built in Mumbai.</span>
-        </div>
+  <div class="w">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo-mark">Mynt<span>more</span></a>
+        <div class="footer-desc">B2B growth systems for founders who want predictable pipeline — not more promises.</div>
+        <div class="footer-contact">Mumbai, India · <a href="mailto:hello@myntmore.com">hello@myntmore.com</a></div>
+      </div>
+      <div>
+        <div class="f-head">Services</div>
+        <ul class="f-links">
+          <li><a href="services.html">Sales Intelligence</a></li>
+          <li><a href="services.html">AI Lead Generation</a></li>
+          <li><a href="services.html">LinkedIn Outreach</a></li>
+          <li><a href="services.html">Personal Branding</a></li>
+          <li><a href="services.html">Cold Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-head">Company</div>
+        <ul class="f-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="tools.html">Free Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-head">Tools</div>
+        <ul class="f-links">
+          <li><a href="tools.html">Profile Optimizer</a></li>
+          <li><a href="tools.html">DM Angle Generator</a></li>
+          <li><a href="tools.html">Posting Rhythm Builder</a></li>
+          <li><a href="resources.html">Newsletter</a></li>
+          <li><a href="resources.html">Pipeline Playbook</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <span class="f-copy">© 2026 Myntmore. Built in Mumbai.</span>
+      <div class="f-social">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter / X</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="main.js"></script>
