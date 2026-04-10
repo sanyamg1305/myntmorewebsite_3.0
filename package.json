@@ -2,9 +2,8 @@
   "name": "myntmorewebsite_3.0",
   "version": "1.0.0",
   "scripts": {
-      "build": "npx tsc",
-      "postinstall": "npm run build"
-    },
+    "postinstall": "npx tsc"
+  },
   "devDependencies": {
     "typescript": "latest"
   }
