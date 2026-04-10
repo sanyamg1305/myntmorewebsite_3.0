@@ -2,7 +2,7 @@
   "name": "myntmorewebsite",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc"
+    "build": "npx tsc"
   },
   "devDependencies": {
     "typescript": "latest"
